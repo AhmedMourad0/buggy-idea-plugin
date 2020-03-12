@@ -1,0 +1,3 @@
+rootProject.name = "mirror-compiler-plugin"
+include "sample"
+include "idea-plugin"

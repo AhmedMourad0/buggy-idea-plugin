@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.ahmedmourad.mirror.idea-plugin</id>
+    <name>Mirror Compiler</name>
+    <vendor email="dev.ahmedmourad73744@gmail.com" url="https://www.ahmedmourad.com">Ahmed Mourad</vendor>
+
+    <description><![CDATA[
+    The IDEA plugin for Mirror, a Kotlin compiler plugin that enables using data classes as value-based classes.<br>
+    <a href="https://github.com/AhmedMourad0/Mirror">Visit on Github</a>
+    ]]></description>
+
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.inspectionSuppressor
+                language="kotlin"
+                implementationClass="com.ahmedmourad.mirror.idea.DataClassPrivateConstructorInspectionSuppressor"
+        />
+    </extensions>
+
+</idea-plugin>
