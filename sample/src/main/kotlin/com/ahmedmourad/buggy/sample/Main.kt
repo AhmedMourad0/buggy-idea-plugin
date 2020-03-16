@@ -1,4 +1,4 @@
-package com.ahmedmourad.mirror.sample
+package com.ahmedmourad.buggy.sample
 
 data class User private constructor(
         val name: String,

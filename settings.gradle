@@ -1,3 +1,3 @@
-rootProject.name = "mirror-compiler-plugin"
+rootProject.name = "buggy-idea-plugin"
 include "sample"
 include "idea-plugin"

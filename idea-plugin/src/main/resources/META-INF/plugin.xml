@@ -1,11 +1,9 @@
 <idea-plugin>
-    <id>com.ahmedmourad.mirror.idea-plugin</id>
-    <name>Mirror Compiler</name>
-    <vendor email="dev.ahmedmourad73744@gmail.com" url="https://www.ahmedmourad.com">Ahmed Mourad</vendor>
+    <id>com.ahmedmourad.bug</id>
+    <name>Test Compiler</name>
 
     <description><![CDATA[
-    The IDEA plugin for Mirror, a Kotlin compiler plugin that enables using data classes as value-based classes.<br>
-    <a href="https://github.com/AhmedMourad0/Mirror">Visit on Github</a>
+    A test IDEA plugin made specifically to showcase the bug with the inspection suppressor
     ]]></description>
 
     <depends>org.jetbrains.kotlin</depends>
@@ -13,7 +11,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <lang.inspectionSuppressor
                 language="kotlin"
-                implementationClass="com.ahmedmourad.mirror.idea.DataClassPrivateConstructorInspectionSuppressor"
+                implementationClass="com.ahmedmourad.buggy.idea.DataClassPrivateConstructorInspectionSuppressor"
         />
     </extensions>
 
