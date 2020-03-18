@@ -1,9 +1,10 @@
 <idea-plugin>
-    <id>com.ahmedmourad.bug</id>
-    <name>Test Compiler</name>
+    <id>com.ahmedmourad.buggy</id>
+    <name>Buggy</name>
+    <vendor>Ahmed Mourad</vendor>
 
     <description><![CDATA[
-    A test IDEA plugin made specifically to showcase the bug with the inspection suppressor
+    An IDEA plugin made specifically to showcase a bug with Kotlin's inspection suppressors
     ]]></description>
 
     <depends>org.jetbrains.kotlin</depends>
@@ -11,7 +12,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <lang.inspectionSuppressor
                 language="kotlin"
-                implementationClass="com.ahmedmourad.buggy.idea.DataClassPrivateConstructorInspectionSuppressor"
+                implementationClass="com.ahmedmourad.buggy.idea.BuggyInspectionSuppressor"
         />
     </extensions>
 
